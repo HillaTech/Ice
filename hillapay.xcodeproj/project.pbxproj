@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1126BBA022A70574004BC996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BB9F22A70574004BC996 /* AppDelegate.swift */; };
+		1126BBA722A70576004BC996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBA622A70576004BC996 /* Assets.xcassets */; };
+		1126BBAA22A70576004BC996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBA822A70576004BC996 /* LaunchScreen.storyboard */; };
+		1126BBB522A70576004BC996 /* hillapayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBB422A70576004BC996 /* hillapayTests.swift */; };
+		1126BBC022A70576004BC996 /* hillapayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBBF22A70576004BC996 /* hillapayUITests.swift */; };
+		1126BBFA22A7062E004BC996 /* IRANSansMobile(FaNum)_Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBCF22A7062E004BC996 /* IRANSansMobile(FaNum)_Black.ttf */; };
+		1126BBFB22A7062E004BC996 /* IRANSansMobile(FaNum).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBD022A7062E004BC996 /* IRANSansMobile(FaNum).ttf */; };
+		1126BBFC22A7062E004BC996 /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBD122A7062E004BC996 /* IRANSansMobile(FaNum)_UltraLight.ttf */; };
+		1126BBFD22A7062E004BC996 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBD222A7062E004BC996 /* IRANSansMobile(FaNum)_Bold.ttf */; };
+		1126BBFE22A7062E004BC996 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBD322A7062E004BC996 /* IRANSansMobile(FaNum)_Medium.ttf */; };
+		1126BBFF22A7062E004BC996 /* IRANSansMobile(FaNum)_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1126BBD422A7062E004BC996 /* IRANSansMobile(FaNum)_Light.ttf */; };
+		1126BC0022A7062E004BC996 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBD722A7062E004BC996 /* Constants.swift */; };
+		1126BC0122A7062E004BC996 /* FontHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBD822A7062E004BC996 /* FontHandler.swift */; };
+		1126BC0222A7062E004BC996 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDA22A7062E004BC996 /* UIColor.swift */; };
+		1126BC0322A7062E004BC996 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDB22A7062E004BC996 /* UINavigationController.swift */; };
+		1126BC0422A7062E004BC996 /* CLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDE22A7062E004BC996 /* CLabel.swift */; };
+		1126BC0522A7062E004BC996 /* BaseTabBatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDF22A7062E004BC996 /* BaseTabBatController.swift */; };
+		1126BC0622A7062E004BC996 /* CButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE022A7062E004BC996 /* CButton.swift */; };
+		1126BC0722A7062E004BC996 /* CView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE122A7062E004BC996 /* CView.swift */; };
+		1126BC0822A7062E004BC996 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE222A7062E004BC996 /* BaseNavigationController.swift */; };
+		1126BC0922A7062F004BC996 /* CImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE322A7062E004BC996 /* CImageView.swift */; };
+		1126BC0B22A7062F004BC996 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE622A7062E004BC996 /* ApiHandler.swift */; };
+		1126BC1922A70A73004BC996 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BC1822A70A73004BC996 /* Strings.swift */; };
+		1148450822A7A1D300B8E33E /* LoginStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148450622A7A1D300B8E33E /* LoginStep1ViewController.swift */; };
+		1148450922A7A1D300B8E33E /* LoginStep1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148450722A7A1D300B8E33E /* LoginStep1ViewController.xib */; };
+		1148450D22A7AA0D00B8E33E /* LoginStep2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */; };
+		1148450E22A7AA0D00B8E33E /* LoginStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148450C22A7AA0D00B8E33E /* LoginStep2ViewController.swift */; };
+		A9C39586A08F158DC538FC59 /* Pods_hillapay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F22A4EBF8327B33EA30C92 /* Pods_hillapay.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1126BBB122A70576004BC996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1126BB9422A70574004BC996 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1126BB9B22A70574004BC996;
+			remoteInfo = hillapay;
+		};
+		1126BBBC22A70576004BC996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1126BB9422A70574004BC996 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1126BB9B22A70574004BC996;
+			remoteInfo = hillapay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1126BB9C22A70574004BC996 /* hillapay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hillapay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1126BB9F22A70574004BC996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1126BBA622A70576004BC996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1126BBA922A70576004BC996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1126BBAB22A70576004BC996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1126BBB022A70576004BC996 /* hillapayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hillapayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1126BBB422A70576004BC996 /* hillapayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hillapayTests.swift; sourceTree = "<group>"; };
+		1126BBB622A70576004BC996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1126BBBB22A70576004BC996 /* hillapayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hillapayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1126BBBF22A70576004BC996 /* hillapayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hillapayUITests.swift; sourceTree = "<group>"; };
+		1126BBC122A70576004BC996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1126BBCF22A7062E004BC996 /* IRANSansMobile(FaNum)_Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Black.ttf"; sourceTree = "<group>"; };
+		1126BBD022A7062E004BC996 /* IRANSansMobile(FaNum).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum).ttf"; sourceTree = "<group>"; };
+		1126BBD122A7062E004BC996 /* IRANSansMobile(FaNum)_UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_UltraLight.ttf"; sourceTree = "<group>"; };
+		1126BBD222A7062E004BC996 /* IRANSansMobile(FaNum)_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Bold.ttf"; sourceTree = "<group>"; };
+		1126BBD322A7062E004BC996 /* IRANSansMobile(FaNum)_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Medium.ttf"; sourceTree = "<group>"; };
+		1126BBD422A7062E004BC996 /* IRANSansMobile(FaNum)_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IRANSansMobile(FaNum)_Light.ttf"; sourceTree = "<group>"; };
+		1126BBD722A7062E004BC996 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1126BBD822A7062E004BC996 /* FontHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontHandler.swift; sourceTree = "<group>"; };
+		1126BBDA22A7062E004BC996 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1126BBDB22A7062E004BC996 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		1126BBDE22A7062E004BC996 /* CLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLabel.swift; sourceTree = "<group>"; };
+		1126BBDF22A7062E004BC996 /* BaseTabBatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBatController.swift; sourceTree = "<group>"; };
+		1126BBE022A7062E004BC996 /* CButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CButton.swift; sourceTree = "<group>"; };
+		1126BBE122A7062E004BC996 /* CView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CView.swift; sourceTree = "<group>"; };
+		1126BBE222A7062E004BC996 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		1126BBE322A7062E004BC996 /* CImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CImageView.swift; sourceTree = "<group>"; };
+		1126BBE622A7062E004BC996 /* ApiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		1126BC1822A70A73004BC996 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		1148450622A7A1D300B8E33E /* LoginStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStep1ViewController.swift; sourceTree = "<group>"; };
+		1148450722A7A1D300B8E33E /* LoginStep1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginStep1ViewController.xib; sourceTree = "<group>"; };
+		1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginStep2ViewController.xib; sourceTree = "<group>"; };
+		1148450C22A7AA0D00B8E33E /* LoginStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStep2ViewController.swift; sourceTree = "<group>"; };
+		1310AF911A327EA57FDDC908 /* Pods-hillapay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hillapay.debug.xcconfig"; path = "Target Support Files/Pods-hillapay/Pods-hillapay.debug.xcconfig"; sourceTree = "<group>"; };
+		98F22A4EBF8327B33EA30C92 /* Pods_hillapay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hillapay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E11715023166A8B2623343 /* Pods-hillapay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hillapay.release.xcconfig"; path = "Target Support Files/Pods-hillapay/Pods-hillapay.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1126BB9922A70574004BC996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C39586A08F158DC538FC59 /* Pods_hillapay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1126BBAD22A70576004BC996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1126BBB822A70576004BC996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1126BB9322A70574004BC996 = {
+			isa = PBXGroup;
+			children = (
+				1126BB9E22A70574004BC996 /* hillapay */,
+				1126BBB322A70576004BC996 /* hillapayTests */,
+				1126BBBE22A70576004BC996 /* hillapayUITests */,
+				1126BB9D22A70574004BC996 /* Products */,
+				BE123397BEF8D8DC3312A4B7 /* Pods */,
+				4C4C20D8191779F42DFB526E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1126BB9D22A70574004BC996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1126BB9C22A70574004BC996 /* hillapay.app */,
+				1126BBB022A70576004BC996 /* hillapayTests.xctest */,
+				1126BBBB22A70576004BC996 /* hillapayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1126BB9E22A70574004BC996 /* hillapay */ = {
+			isa = PBXGroup;
+			children = (
+				1126BB9F22A70574004BC996 /* AppDelegate.swift */,
+				1126BBCD22A7062E004BC996 /* Resources */,
+				1126BBD522A7062E004BC996 /* Source */,
+				1126BBA622A70576004BC996 /* Assets.xcassets */,
+				1126BBA822A70576004BC996 /* LaunchScreen.storyboard */,
+				1126BBAB22A70576004BC996 /* Info.plist */,
+			);
+			path = hillapay;
+			sourceTree = "<group>";
+		};
+		1126BBB322A70576004BC996 /* hillapayTests */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBB422A70576004BC996 /* hillapayTests.swift */,
+				1126BBB622A70576004BC996 /* Info.plist */,
+			);
+			path = hillapayTests;
+			sourceTree = "<group>";
+		};
+		1126BBBE22A70576004BC996 /* hillapayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBBF22A70576004BC996 /* hillapayUITests.swift */,
+				1126BBC122A70576004BC996 /* Info.plist */,
+			);
+			path = hillapayUITests;
+			sourceTree = "<group>";
+		};
+		1126BBCD22A7062E004BC996 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBCE22A7062E004BC996 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1126BBCE22A7062E004BC996 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBCF22A7062E004BC996 /* IRANSansMobile(FaNum)_Black.ttf */,
+				1126BBD022A7062E004BC996 /* IRANSansMobile(FaNum).ttf */,
+				1126BBD122A7062E004BC996 /* IRANSansMobile(FaNum)_UltraLight.ttf */,
+				1126BBD222A7062E004BC996 /* IRANSansMobile(FaNum)_Bold.ttf */,
+				1126BBD322A7062E004BC996 /* IRANSansMobile(FaNum)_Medium.ttf */,
+				1126BBD422A7062E004BC996 /* IRANSansMobile(FaNum)_Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1126BBD522A7062E004BC996 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBD622A7062E004BC996 /* Tools */,
+				1126BBD922A7062E004BC996 /* Extensiones */,
+				1126BBDC22A7062E004BC996 /* Models */,
+				1126BBDD22A7062E004BC996 /* CustomObject */,
+				1126BBE422A7062E004BC996 /* Controllers */,
+				1126BBE722A7062E004BC996 /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1126BBD622A7062E004BC996 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBD722A7062E004BC996 /* Constants.swift */,
+				1126BBD822A7062E004BC996 /* FontHandler.swift */,
+				1126BC1822A70A73004BC996 /* Strings.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1126BBD922A7062E004BC996 /* Extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBDA22A7062E004BC996 /* UIColor.swift */,
+				1126BBDB22A7062E004BC996 /* UINavigationController.swift */,
+			);
+			path = Extensiones;
+			sourceTree = "<group>";
+		};
+		1126BBDC22A7062E004BC996 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1126BBDD22A7062E004BC996 /* CustomObject */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBDE22A7062E004BC996 /* CLabel.swift */,
+				1126BBDF22A7062E004BC996 /* BaseTabBatController.swift */,
+				1126BBE022A7062E004BC996 /* CButton.swift */,
+				1126BBE122A7062E004BC996 /* CView.swift */,
+				1126BBE222A7062E004BC996 /* BaseNavigationController.swift */,
+				1126BBE322A7062E004BC996 /* CImageView.swift */,
+			);
+			path = CustomObject;
+			sourceTree = "<group>";
+		};
+		1126BBE422A7062E004BC996 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1126BBE622A7062E004BC996 /* ApiHandler.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1126BBE722A7062E004BC996 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1148450522A7A1AA00B8E33E /* LoginStep1 */,
+				1148450A22A7A9CE00B8E33E /* LoginStep2 */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1148450522A7A1AA00B8E33E /* LoginStep1 */ = {
+			isa = PBXGroup;
+			children = (
+				1148450622A7A1D300B8E33E /* LoginStep1ViewController.swift */,
+				1148450722A7A1D300B8E33E /* LoginStep1ViewController.xib */,
+			);
+			path = LoginStep1;
+			sourceTree = "<group>";
+		};
+		1148450A22A7A9CE00B8E33E /* LoginStep2 */ = {
+			isa = PBXGroup;
+			children = (
+				1148450C22A7AA0D00B8E33E /* LoginStep2ViewController.swift */,
+				1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */,
+			);
+			path = LoginStep2;
+			sourceTree = "<group>";
+		};
+		4C4C20D8191779F42DFB526E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98F22A4EBF8327B33EA30C92 /* Pods_hillapay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE123397BEF8D8DC3312A4B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1310AF911A327EA57FDDC908 /* Pods-hillapay.debug.xcconfig */,
+				F0E11715023166A8B2623343 /* Pods-hillapay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1126BB9B22A70574004BC996 /* hillapay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1126BBC422A70576004BC996 /* Build configuration list for PBXNativeTarget "hillapay" */;
+			buildPhases = (
+				3FDEB9485EAB9ED04DE254BF /* [CP] Check Pods Manifest.lock */,
+				1126BB9822A70574004BC996 /* Sources */,
+				1126BB9922A70574004BC996 /* Frameworks */,
+				1126BB9A22A70574004BC996 /* Resources */,
+				0864CEA6AD0E421383C0F2F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hillapay;
+			productName = hillapay;
+			productReference = 1126BB9C22A70574004BC996 /* hillapay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1126BBAF22A70576004BC996 /* hillapayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1126BBC722A70576004BC996 /* Build configuration list for PBXNativeTarget "hillapayTests" */;
+			buildPhases = (
+				1126BBAC22A70576004BC996 /* Sources */,
+				1126BBAD22A70576004BC996 /* Frameworks */,
+				1126BBAE22A70576004BC996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1126BBB222A70576004BC996 /* PBXTargetDependency */,
+			);
+			name = hillapayTests;
+			productName = hillapayTests;
+			productReference = 1126BBB022A70576004BC996 /* hillapayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1126BBBA22A70576004BC996 /* hillapayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1126BBCA22A70576004BC996 /* Build configuration list for PBXNativeTarget "hillapayUITests" */;
+			buildPhases = (
+				1126BBB722A70576004BC996 /* Sources */,
+				1126BBB822A70576004BC996 /* Frameworks */,
+				1126BBB922A70576004BC996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1126BBBD22A70576004BC996 /* PBXTargetDependency */,
+			);
+			name = hillapayUITests;
+			productName = hillapayUITests;
+			productReference = 1126BBBB22A70576004BC996 /* hillapayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1126BB9422A70574004BC996 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Mahdi;
+				TargetAttributes = {
+					1126BB9B22A70574004BC996 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					1126BBAF22A70576004BC996 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 1126BB9B22A70574004BC996;
+					};
+					1126BBBA22A70576004BC996 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 1126BB9B22A70574004BC996;
+					};
+				};
+			};
+			buildConfigurationList = 1126BB9722A70574004BC996 /* Build configuration list for PBXProject "hillapay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1126BB9322A70574004BC996;
+			productRefGroup = 1126BB9D22A70574004BC996 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1126BB9B22A70574004BC996 /* hillapay */,
+				1126BBAF22A70576004BC996 /* hillapayTests */,
+				1126BBBA22A70576004BC996 /* hillapayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1126BB9A22A70574004BC996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1148450922A7A1D300B8E33E /* LoginStep1ViewController.xib in Resources */,
+				1126BBAA22A70576004BC996 /* LaunchScreen.storyboard in Resources */,
+				1126BBFB22A7062E004BC996 /* IRANSansMobile(FaNum).ttf in Resources */,
+				1126BBFC22A7062E004BC996 /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */,
+				1148450D22A7AA0D00B8E33E /* LoginStep2ViewController.xib in Resources */,
+				1126BBA722A70576004BC996 /* Assets.xcassets in Resources */,
+				1126BBFF22A7062E004BC996 /* IRANSansMobile(FaNum)_Light.ttf in Resources */,
+				1126BBFA22A7062E004BC996 /* IRANSansMobile(FaNum)_Black.ttf in Resources */,
+				1126BBFE22A7062E004BC996 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */,
+				1126BBFD22A7062E004BC996 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1126BBAE22A70576004BC996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1126BBB922A70576004BC996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0864CEA6AD0E421383C0F2F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hillapay/Pods-hillapay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hillapay/Pods-hillapay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hillapay/Pods-hillapay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FDEB9485EAB9ED04DE254BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hillapay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1126BB9822A70574004BC996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1126BC0922A7062F004BC996 /* CImageView.swift in Sources */,
+				1126BC0122A7062E004BC996 /* FontHandler.swift in Sources */,
+				1126BC0522A7062E004BC996 /* BaseTabBatController.swift in Sources */,
+				1126BBA022A70574004BC996 /* AppDelegate.swift in Sources */,
+				1148450822A7A1D300B8E33E /* LoginStep1ViewController.swift in Sources */,
+				1126BC0322A7062E004BC996 /* UINavigationController.swift in Sources */,
+				1126BC1922A70A73004BC996 /* Strings.swift in Sources */,
+				1126BC0422A7062E004BC996 /* CLabel.swift in Sources */,
+				1126BC0022A7062E004BC996 /* Constants.swift in Sources */,
+				1126BC0822A7062E004BC996 /* BaseNavigationController.swift in Sources */,
+				1126BC0222A7062E004BC996 /* UIColor.swift in Sources */,
+				1148450E22A7AA0D00B8E33E /* LoginStep2ViewController.swift in Sources */,
+				1126BC0B22A7062F004BC996 /* ApiHandler.swift in Sources */,
+				1126BC0722A7062E004BC996 /* CView.swift in Sources */,
+				1126BC0622A7062E004BC996 /* CButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1126BBAC22A70576004BC996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1126BBB522A70576004BC996 /* hillapayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1126BBB722A70576004BC996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1126BBC022A70576004BC996 /* hillapayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1126BBB222A70576004BC996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1126BB9B22A70574004BC996 /* hillapay */;
+			targetProxy = 1126BBB122A70576004BC996 /* PBXContainerItemProxy */;
+		};
+		1126BBBD22A70576004BC996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1126BB9B22A70574004BC996 /* hillapay */;
+			targetProxy = 1126BBBC22A70576004BC996 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1126BBA822A70576004BC996 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1126BBA922A70576004BC996 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1126BBC222A70576004BC996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1126BBC322A70576004BC996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1126BBC522A70576004BC996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1310AF911A327EA57FDDC908 /* Pods-hillapay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hillapay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillavas.hillapay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1126BBC622A70576004BC996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E11715023166A8B2623343 /* Pods-hillapay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hillapay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillavas.hillapay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1126BBC822A70576004BC996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hillapayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillavas.hillapayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hillapay.app/hillapay";
+			};
+			name = Debug;
+		};
+		1126BBC922A70576004BC996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hillapayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillavas.hillapayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hillapay.app/hillapay";
+			};
+			name = Release;
+		};
+		1126BBCB22A70576004BC996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hillapayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillavas.hillapayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hillapay;
+			};
+			name = Debug;
+		};
+		1126BBCC22A70576004BC996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hillapayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillavas.hillapayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hillapay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1126BB9722A70574004BC996 /* Build configuration list for PBXProject "hillapay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1126BBC222A70576004BC996 /* Debug */,
+				1126BBC322A70576004BC996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1126BBC422A70576004BC996 /* Build configuration list for PBXNativeTarget "hillapay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1126BBC522A70576004BC996 /* Debug */,
+				1126BBC622A70576004BC996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1126BBC722A70576004BC996 /* Build configuration list for PBXNativeTarget "hillapayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1126BBC822A70576004BC996 /* Debug */,
+				1126BBC922A70576004BC996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1126BBCA22A70576004BC996 /* Build configuration list for PBXNativeTarget "hillapayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1126BBCB22A70576004BC996 /* Debug */,
+				1126BBCC22A70576004BC996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1126BB9422A70574004BC996 /* Project object */;
+}
