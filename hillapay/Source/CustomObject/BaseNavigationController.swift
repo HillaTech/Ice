@@ -15,7 +15,7 @@ class BaseNavigationController: UINavigationController {
         print("BaseNavigationController")
         
         self.navigationBar.barStyle = .blackTranslucent
-        self.navigationBar.barTintColor = UIColor.PRIMARY_1
+        //self.navigationBar.barTintColor = UIColor.PRIMARY_1
         self.navigationBar.isTranslucent = false
         
         self.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Constants.font.IRANSansRegular, size: 16)!]

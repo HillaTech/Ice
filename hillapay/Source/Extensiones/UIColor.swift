@@ -33,10 +33,10 @@ extension UIColor {
     
     //MARK: - Custom Color
     
-    static var PRIMARY_1 : UIColor { return UIColor(named: "PRIMARY_1")! }
-    static var PRIMARY_2 : UIColor { return UIColor(named: "PRIMARY_2")! }
-    static var PRIMARY_3 : UIColor { return UIColor(named: "PRIMARY_3")! }
-    static var PRIMARY_4 : UIColor { return UIColor(named: "PRIMARY_4")! }
+//    static var PRIMARY_1 : UIColor { return UIColor(named: "PRIMARY_1")! }
+//    static var PRIMARY_2 : UIColor { return UIColor(named: "PRIMARY_2")! }
+//    static var PRIMARY_3 : UIColor { return UIColor(named: "PRIMARY_3")! }
+//    static var PRIMARY_4 : UIColor { return UIColor(named: "PRIMARY_4")! }
 //    static var PRIMARY_5 : UIColor { return UIColor(named: "PRIMARY_5")! }
 //    static var PRIMARY_6 : UIColor { return UIColor(named: "PRIMARY_6")! }
 //    static var PRIMARY_7 : UIColor { return UIColor(named: "PRIMARY_7")! }
