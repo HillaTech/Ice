@@ -31,7 +31,6 @@
 		1126BC0B22A7062F004BC996 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE622A7062E004BC996 /* ApiHandler.swift */; };
 		1126BC1922A70A73004BC996 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BC1822A70A73004BC996 /* Strings.swift */; };
 		11336B9222AF64AD005CAE39 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11336B9022AF64AD005CAE39 /* IntroViewController.swift */; };
-		11336B9322AF64AD005CAE39 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11336B9122AF64AD005CAE39 /* IntroViewController.xib */; };
 		11336B9722AF6B1C005CAE39 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11336B9522AF6B1C005CAE39 /* ChildViewController.swift */; };
 		11336B9822AF6B1C005CAE39 /* ChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11336B9622AF6B1C005CAE39 /* ChildViewController.xib */; };
 		114714C122A9680400FBB160 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114714BF22A9680400FBB160 /* HomeViewController.swift */; };
@@ -97,7 +96,6 @@
 		1126BBE622A7062E004BC996 /* ApiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 		1126BC1822A70A73004BC996 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		11336B9022AF64AD005CAE39 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		11336B9122AF64AD005CAE39 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		11336B9522AF6B1C005CAE39 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		11336B9622AF6B1C005CAE39 /* ChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildViewController.xib; sourceTree = "<group>"; };
 		114714BF22A9680400FBB160 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 			children = (
 				11336B9422AF6AE7005CAE39 /* Child */,
 				11336B9022AF64AD005CAE39 /* IntroViewController.swift */,
-				11336B9122AF64AD005CAE39 /* IntroViewController.xib */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -499,7 +496,6 @@
 				1126BBFA22A7062E004BC996 /* IRANSansMobile(FaNum)_Black.ttf in Resources */,
 				114714D122A96A4600FBB160 /* ReportsViewController.xib in Resources */,
 				11336B9822AF6B1C005CAE39 /* ChildViewController.xib in Resources */,
-				11336B9322AF64AD005CAE39 /* IntroViewController.xib in Resources */,
 				1126BBFE22A7062E004BC996 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */,
 				1126BBFD22A7062E004BC996 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */,
 				114714C222A9680400FBB160 /* HomeViewController.xib in Resources */,
