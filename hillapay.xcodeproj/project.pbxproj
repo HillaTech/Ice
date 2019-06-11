@@ -23,7 +23,7 @@
 		1126BC0222A7062E004BC996 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDA22A7062E004BC996 /* UIColor.swift */; };
 		1126BC0322A7062E004BC996 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDB22A7062E004BC996 /* UINavigationController.swift */; };
 		1126BC0422A7062E004BC996 /* CLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDE22A7062E004BC996 /* CLabel.swift */; };
-		1126BC0522A7062E004BC996 /* BaseTabBatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDF22A7062E004BC996 /* BaseTabBatController.swift */; };
+		1126BC0522A7062E004BC996 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBDF22A7062E004BC996 /* BaseTabBarController.swift */; };
 		1126BC0622A7062E004BC996 /* CButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE022A7062E004BC996 /* CButton.swift */; };
 		1126BC0722A7062E004BC996 /* CView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE122A7062E004BC996 /* CView.swift */; };
 		1126BC0822A7062E004BC996 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE222A7062E004BC996 /* BaseNavigationController.swift */; };
@@ -45,6 +45,8 @@
 		1148450922A7A1D300B8E33E /* LoginStep1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148450722A7A1D300B8E33E /* LoginStep1ViewController.xib */; };
 		1148450D22A7AA0D00B8E33E /* LoginStep2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */; };
 		1148450E22A7AA0D00B8E33E /* LoginStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148450C22A7AA0D00B8E33E /* LoginStep2ViewController.swift */; };
+		118EE76C22AFF83F00E03BF8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE76B22AFF83F00E03BF8 /* UIViewController.swift */; };
+		118EE77022AFF98A00E03BF8 /* UserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE76F22AFF98A00E03BF8 /* UserHandler.swift */; };
 		A9C39586A08F158DC538FC59 /* Pods_hillapay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F22A4EBF8327B33EA30C92 /* Pods_hillapay.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +90,7 @@
 		1126BBDA22A7062E004BC996 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		1126BBDB22A7062E004BC996 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		1126BBDE22A7062E004BC996 /* CLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLabel.swift; sourceTree = "<group>"; };
-		1126BBDF22A7062E004BC996 /* BaseTabBatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBatController.swift; sourceTree = "<group>"; };
+		1126BBDF22A7062E004BC996 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		1126BBE022A7062E004BC996 /* CButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CButton.swift; sourceTree = "<group>"; };
 		1126BBE122A7062E004BC996 /* CView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CView.swift; sourceTree = "<group>"; };
 		1126BBE222A7062E004BC996 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,8 @@
 		1148450722A7A1D300B8E33E /* LoginStep1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginStep1ViewController.xib; sourceTree = "<group>"; };
 		1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginStep2ViewController.xib; sourceTree = "<group>"; };
 		1148450C22A7AA0D00B8E33E /* LoginStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStep2ViewController.swift; sourceTree = "<group>"; };
+		118EE76B22AFF83F00E03BF8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		118EE76F22AFF98A00E03BF8 /* UserHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHandler.swift; sourceTree = "<group>"; };
 		1310AF911A327EA57FDDC908 /* Pods-hillapay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hillapay.debug.xcconfig"; path = "Target Support Files/Pods-hillapay/Pods-hillapay.debug.xcconfig"; sourceTree = "<group>"; };
 		98F22A4EBF8327B33EA30C92 /* Pods_hillapay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hillapay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E11715023166A8B2623343 /* Pods-hillapay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hillapay.release.xcconfig"; path = "Target Support Files/Pods-hillapay/Pods-hillapay.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 			children = (
 				1126BBDA22A7062E004BC996 /* UIColor.swift */,
 				1126BBDB22A7062E004BC996 /* UINavigationController.swift */,
+				118EE76B22AFF83F00E03BF8 /* UIViewController.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -258,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				1126BBDE22A7062E004BC996 /* CLabel.swift */,
-				1126BBDF22A7062E004BC996 /* BaseTabBatController.swift */,
+				1126BBDF22A7062E004BC996 /* BaseTabBarController.swift */,
 				1126BBE022A7062E004BC996 /* CButton.swift */,
 				1126BBE122A7062E004BC996 /* CView.swift */,
 				1126BBE222A7062E004BC996 /* BaseNavigationController.swift */,
@@ -271,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				1126BBE622A7062E004BC996 /* ApiHandler.swift */,
+				118EE76F22AFF98A00E03BF8 /* UserHandler.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -292,8 +298,8 @@
 		11336B8F22AF6481005CAE39 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				11336B9422AF6AE7005CAE39 /* Child */,
 				11336B9022AF64AD005CAE39 /* IntroViewController.swift */,
+				11336B9422AF6AE7005CAE39 /* Child */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -568,7 +574,7 @@
 				1126BC0922A7062F004BC996 /* CImageView.swift in Sources */,
 				1126BC0122A7062E004BC996 /* FontHandler.swift in Sources */,
 				114714C622A969CD00FBB160 /* SupportViewController.swift in Sources */,
-				1126BC0522A7062E004BC996 /* BaseTabBatController.swift in Sources */,
+				1126BC0522A7062E004BC996 /* BaseTabBarController.swift in Sources */,
 				1126BBA022A70574004BC996 /* AppDelegate.swift in Sources */,
 				114714D022A96A4600FBB160 /* ReportsViewController.swift in Sources */,
 				1148450822A7A1D300B8E33E /* LoginStep1ViewController.swift in Sources */,
@@ -578,7 +584,9 @@
 				1126BC0422A7062E004BC996 /* CLabel.swift in Sources */,
 				1126BC0022A7062E004BC996 /* Constants.swift in Sources */,
 				1126BC0822A7062E004BC996 /* BaseNavigationController.swift in Sources */,
+				118EE77022AFF98A00E03BF8 /* UserHandler.swift in Sources */,
 				1126BC0222A7062E004BC996 /* UIColor.swift in Sources */,
+				118EE76C22AFF83F00E03BF8 /* UIViewController.swift in Sources */,
 				11336B9722AF6B1C005CAE39 /* ChildViewController.swift in Sources */,
 				114714C122A9680400FBB160 /* HomeViewController.swift in Sources */,
 				11336B9222AF64AD005CAE39 /* IntroViewController.swift in Sources */,

@@ -11,6 +11,7 @@ import UIKit
 class IntroViewController: UIPageViewController {
     
     var pageControl = UIPageControl()
+    fileprivate var totalViewControllers = 4
     
     fileprivate lazy var orderedViewControllers: [UIViewController] = {
         return [self.newColoredViewController(imageName: "slides_1"),
@@ -40,6 +41,16 @@ class IntroViewController: UIPageViewController {
         configPageControl()
         configButton()
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+        for subview in self.view.subviews {
+            if let scrollView = subview as? UIScrollView {
+                scrollView.delegate = self
+                break;
+            }
+        }
     }
     
     private func newColoredViewController(imageName: String) -> UIViewController {
@@ -84,7 +95,7 @@ class IntroViewController: UIPageViewController {
 
 // MARK: UIPageViewControllerDataSource
 
-extension IntroViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+extension IntroViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate, UIScrollViewDelegate {
     
     override var transitionStyle: UIPageViewController.TransitionStyle {
         return .scroll
@@ -137,5 +148,23 @@ extension IntroViewController: UIPageViewControllerDataSource, UIPageViewControl
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         let pageContentViewController = pageViewController.viewControllers![0]
         self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
+        
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (self.pageControl.currentPage == 0 && scrollView.contentOffset.x < scrollView.bounds.size.width) {
+            scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0);
+        } else if (self.pageControl.currentPage == totalViewControllers - 1 && scrollView.contentOffset.x > scrollView.bounds.size.width) {
+            scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0);
+        }
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        if (self.pageControl.currentPage == 0 && scrollView.contentOffset.x <= scrollView.bounds.size.width) {
+            targetContentOffset.pointee = CGPoint(x: scrollView.bounds.size.width, y: 0);
+        } else if (self.pageControl.currentPage == totalViewControllers - 1 && scrollView.contentOffset.x >= scrollView.bounds.size.width) {
+            targetContentOffset.pointee = CGPoint(x: scrollView.bounds.size.width, y: 0);
+        }
     }
 }

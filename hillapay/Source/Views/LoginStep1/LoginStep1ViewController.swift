@@ -10,10 +10,38 @@ import UIKit
 
 class LoginStep1ViewController: UIViewController {
 
+    @IBOutlet weak var cellphoneTextField: UITextField!
+    
+    let userHandler = UserHandler.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hideKeyboardWhenTappedAround()
+        
+    }
+    
+    @IBAction func submitAction(_ sender: Any) {
+        
+        let cellphone = cellphoneTextField.text ?? ""
+        
+        if cellphone == "" {
+            
+        } else {
+            userHandler.loginStep1(cellphone: cellphone, delegate: self)
+        }
         
     }
 
+}
+
+//MARK: - USER HANDLER DELEGATE 
+extension LoginStep1ViewController: UserHandlerDelegate {
+    
+    func loginStep1Successfully() {
+        print("loginStep1Successfully")
+    }
+    
+    func loginStep1Failed() {
+        print("loginStep1Failed")
+    }
 }

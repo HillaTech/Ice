@@ -24,6 +24,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="hillapay" customModuleProvider="target">
             <connections>
+                <outlet property="cellphoneTextField" destination="t2e-3c-Nez" id="Q9Q-a5-jqu"/>
+                <outlet property="codeMeliTextField" destination="snb-Yv-dnR" id="BDd-rN-kml"/>
+                <outlet property="firstNameTextField" destination="YTh-R7-C07" id="yKq-J6-0eJ"/>
+                <outlet property="lastNameTextField" destination="j8V-IR-VlH" id="RYD-g9-jeF"/>
+                <outlet property="nikeNameTextField" destination="LoP-Bv-4Sc" id="bpB-pC-JAg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -54,7 +59,7 @@
                                             <rect key="frame" x="5" y="5" width="344" height="40"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,8 +90,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imh-rm-VZC">
                             <rect key="frame" x="0.0" y="100" width="414" height="100"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شماره تلفن همراه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNN-Sf-33c">
-                                    <rect key="frame" x="162.5" y="15" width="89.5" height="20"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نام مستعار" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNN-Sf-33c">
+                                    <rect key="frame" x="179.5" y="15" width="55" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="6wU-Ta-dBX"/>
                                     </constraints>
@@ -242,7 +247,7 @@
                                             <rect key="frame" x="5" y="5" width="344" height="40"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         </textField>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -309,6 +314,9 @@
                                     <real key="value" value="25"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="editeAction:" destination="-1" eventType="touchUpInside" id="upS-wl-DDN"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" name="PRIMARY_3"/>
