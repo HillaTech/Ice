@@ -30,6 +30,10 @@
 		1126BC0922A7062F004BC996 /* CImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE322A7062E004BC996 /* CImageView.swift */; };
 		1126BC0B22A7062F004BC996 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BBE622A7062E004BC996 /* ApiHandler.swift */; };
 		1126BC1922A70A73004BC996 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126BC1822A70A73004BC996 /* Strings.swift */; };
+		11336B9222AF64AD005CAE39 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11336B9022AF64AD005CAE39 /* IntroViewController.swift */; };
+		11336B9322AF64AD005CAE39 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11336B9122AF64AD005CAE39 /* IntroViewController.xib */; };
+		11336B9722AF6B1C005CAE39 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11336B9522AF6B1C005CAE39 /* ChildViewController.swift */; };
+		11336B9822AF6B1C005CAE39 /* ChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11336B9622AF6B1C005CAE39 /* ChildViewController.xib */; };
 		114714C122A9680400FBB160 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114714BF22A9680400FBB160 /* HomeViewController.swift */; };
 		114714C222A9680400FBB160 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114714C022A9680400FBB160 /* HomeViewController.xib */; };
 		114714C622A969CD00FBB160 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114714C422A969CD00FBB160 /* SupportViewController.swift */; };
@@ -92,6 +96,10 @@
 		1126BBE322A7062E004BC996 /* CImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CImageView.swift; sourceTree = "<group>"; };
 		1126BBE622A7062E004BC996 /* ApiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
 		1126BC1822A70A73004BC996 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		11336B9022AF64AD005CAE39 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		11336B9122AF64AD005CAE39 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		11336B9522AF6B1C005CAE39 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		11336B9622AF6B1C005CAE39 /* ChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildViewController.xib; sourceTree = "<group>"; };
 		114714BF22A9680400FBB160 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		114714C022A9680400FBB160 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		114714C422A969CD00FBB160 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
@@ -272,14 +280,34 @@
 		1126BBE722A7062E004BC996 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				11336B8F22AF6481005CAE39 /* Intro */,
 				1148450522A7A1AA00B8E33E /* LoginStep1 */,
 				1148450A22A7A9CE00B8E33E /* LoginStep2 */,
 				114714BE22A967EA00FBB160 /* Home */,
 				114714CD22A96A2E00FBB160 /* Reports */,
-				114714C322A9699D00FBB160 /* Support */,
 				114714C822A969F300FBB160 /* Profile */,
+				114714C322A9699D00FBB160 /* Support */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		11336B8F22AF6481005CAE39 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				11336B9422AF6AE7005CAE39 /* Child */,
+				11336B9022AF64AD005CAE39 /* IntroViewController.swift */,
+				11336B9122AF64AD005CAE39 /* IntroViewController.xib */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		11336B9422AF6AE7005CAE39 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				11336B9522AF6B1C005CAE39 /* ChildViewController.swift */,
+				11336B9622AF6B1C005CAE39 /* ChildViewController.xib */,
+			);
+			path = Child;
 			sourceTree = "<group>";
 		};
 		114714BE22A967EA00FBB160 /* Home */ = {
@@ -470,6 +498,8 @@
 				1126BBFF22A7062E004BC996 /* IRANSansMobile(FaNum)_Light.ttf in Resources */,
 				1126BBFA22A7062E004BC996 /* IRANSansMobile(FaNum)_Black.ttf in Resources */,
 				114714D122A96A4600FBB160 /* ReportsViewController.xib in Resources */,
+				11336B9822AF6B1C005CAE39 /* ChildViewController.xib in Resources */,
+				11336B9322AF64AD005CAE39 /* IntroViewController.xib in Resources */,
 				1126BBFE22A7062E004BC996 /* IRANSansMobile(FaNum)_Medium.ttf in Resources */,
 				1126BBFD22A7062E004BC996 /* IRANSansMobile(FaNum)_Bold.ttf in Resources */,
 				114714C222A9680400FBB160 /* HomeViewController.xib in Resources */,
@@ -553,7 +583,9 @@
 				1126BC0022A7062E004BC996 /* Constants.swift in Sources */,
 				1126BC0822A7062E004BC996 /* BaseNavigationController.swift in Sources */,
 				1126BC0222A7062E004BC996 /* UIColor.swift in Sources */,
+				11336B9722AF6B1C005CAE39 /* ChildViewController.swift in Sources */,
 				114714C122A9680400FBB160 /* HomeViewController.swift in Sources */,
+				11336B9222AF64AD005CAE39 /* IntroViewController.swift in Sources */,
 				1148450E22A7AA0D00B8E33E /* LoginStep2ViewController.swift in Sources */,
 				1126BC0B22A7062F004BC996 /* ApiHandler.swift in Sources */,
 				1126BC0722A7062E004BC996 /* CView.swift in Sources */,
@@ -726,6 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DN3REULM3;
 				INFOPLIST_FILE = hillapay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -744,6 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DN3REULM3;
 				INFOPLIST_FILE = hillapay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

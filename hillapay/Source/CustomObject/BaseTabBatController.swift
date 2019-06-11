@@ -43,7 +43,8 @@ class BaseTabBatController: UITabBarController {
         thirdTabNavigationController.tabBarItem   = item3
         forceTabNavigationController.tabBarItem   = item4
         
-        //self.tabBar.barTintColor = UIColor.PRIMARY_4
+        self.tabBar.barTintColor = UIColor.PRIMARY_2
+        self.tabBar.tintColor = UIColor.PRIMARY_1
         self.tabBar.isTranslucent = true
         
         //UITabBar.appearance().tintColor = UIColor.PRIMARY_4

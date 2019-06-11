@@ -14,15 +14,15 @@ class BaseNavigationController: UINavigationController {
     override func viewDidLoad() {
         print("BaseNavigationController")
         
-        self.navigationBar.barStyle = .blackTranslucent
-        //self.navigationBar.barTintColor = UIColor.PRIMARY_1
-        self.navigationBar.isTranslucent = false
-        
-        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Constants.font.IRANSansRegular, size: 16)!]
-        self.navigationBar.tintColor = .red
-        
         self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Constants.font.IRANSansRegular, size: 17)!, .foregroundColor: UIColor.white]
+        
+        self.navigationBar.barStyle      = .blackTranslucent
+        self.navigationBar.barTintColor  = UIColor.PRIMARY_4
+        self.navigationBar.tintColor     = UIColor.red
+        self.navigationBar.isTranslucent = false
+        self.navigationBar.shadowImage   = UIImage()
+        
         
     }
     
