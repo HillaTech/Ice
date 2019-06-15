@@ -45,6 +45,8 @@
 		1148450922A7A1D300B8E33E /* LoginStep1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148450722A7A1D300B8E33E /* LoginStep1ViewController.xib */; };
 		1148450D22A7AA0D00B8E33E /* LoginStep2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */; };
 		1148450E22A7AA0D00B8E33E /* LoginStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148450C22A7AA0D00B8E33E /* LoginStep2ViewController.swift */; };
+		116C4AB922B24C29001419A6 /* ReportsFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116C4AB722B24C29001419A6 /* ReportsFilterViewController.swift */; };
+		116C4ABA22B24C29001419A6 /* ReportsFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116C4AB822B24C29001419A6 /* ReportsFilterViewController.xib */; };
 		118EE76C22AFF83F00E03BF8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE76B22AFF83F00E03BF8 /* UIViewController.swift */; };
 		118EE77022AFF98A00E03BF8 /* UserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE76F22AFF98A00E03BF8 /* UserHandler.swift */; };
 		A9C39586A08F158DC538FC59 /* Pods_hillapay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F22A4EBF8327B33EA30C92 /* Pods_hillapay.framework */; };
@@ -112,6 +114,8 @@
 		1148450722A7A1D300B8E33E /* LoginStep1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginStep1ViewController.xib; sourceTree = "<group>"; };
 		1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginStep2ViewController.xib; sourceTree = "<group>"; };
 		1148450C22A7AA0D00B8E33E /* LoginStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginStep2ViewController.swift; sourceTree = "<group>"; };
+		116C4AB722B24C29001419A6 /* ReportsFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsFilterViewController.swift; sourceTree = "<group>"; };
+		116C4AB822B24C29001419A6 /* ReportsFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportsFilterViewController.xib; sourceTree = "<group>"; };
 		118EE76B22AFF83F00E03BF8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		118EE76F22AFF98A00E03BF8 /* UserHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHandler.swift; sourceTree = "<group>"; };
 		1310AF911A327EA57FDDC908 /* Pods-hillapay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hillapay.debug.xcconfig"; path = "Target Support Files/Pods-hillapay/Pods-hillapay.debug.xcconfig"; sourceTree = "<group>"; };
@@ -345,6 +349,7 @@
 			children = (
 				114714CE22A96A4600FBB160 /* ReportsViewController.swift */,
 				114714CF22A96A4600FBB160 /* ReportsViewController.xib */,
+				116C4AB622B24C07001419A6 /* ReportsFilter */,
 			);
 			path = Reports;
 			sourceTree = "<group>";
@@ -365,6 +370,15 @@
 				1148450B22A7AA0D00B8E33E /* LoginStep2ViewController.xib */,
 			);
 			path = LoginStep2;
+			sourceTree = "<group>";
+		};
+		116C4AB622B24C07001419A6 /* ReportsFilter */ = {
+			isa = PBXGroup;
+			children = (
+				116C4AB722B24C29001419A6 /* ReportsFilterViewController.swift */,
+				116C4AB822B24C29001419A6 /* ReportsFilterViewController.xib */,
+			);
+			path = ReportsFilter;
 			sourceTree = "<group>";
 		};
 		4C4C20D8191779F42DFB526E /* Frameworks */ = {
@@ -494,6 +508,7 @@
 				1126BBAA22A70576004BC996 /* LaunchScreen.storyboard in Resources */,
 				1126BBFB22A7062E004BC996 /* IRANSansMobile(FaNum).ttf in Resources */,
 				114714CC22A96A0900FBB160 /* ProfileViewController.xib in Resources */,
+				116C4ABA22B24C29001419A6 /* ReportsFilterViewController.xib in Resources */,
 				1126BBFC22A7062E004BC996 /* IRANSansMobile(FaNum)_UltraLight.ttf in Resources */,
 				1148450D22A7AA0D00B8E33E /* LoginStep2ViewController.xib in Resources */,
 				1126BBA722A70576004BC996 /* Assets.xcassets in Resources */,
@@ -571,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				116C4AB922B24C29001419A6 /* ReportsFilterViewController.swift in Sources */,
 				1126BC0922A7062F004BC996 /* CImageView.swift in Sources */,
 				1126BC0122A7062E004BC996 /* FontHandler.swift in Sources */,
 				114714C622A969CD00FBB160 /* SupportViewController.swift in Sources */,

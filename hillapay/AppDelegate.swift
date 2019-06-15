@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let Intro = IntroViewController()
-        //let Intro = BaseTabBarController()
+        //let vc = IntroViewController()
+        let vc = BaseTabBarController()
         
-        window!.rootViewController = Intro
+        window!.rootViewController = vc
         window!.makeKeyAndVisible()
         
         return true

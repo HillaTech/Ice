@@ -16,16 +16,13 @@ class ReportsViewController: UIViewController {
         self.navigationItem.title = Strings.reports
 
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func filterAction(_ sender: Any) {
+        
+        let filter = ReportsFilterViewController()
+        filter.modalPresentationStyle = .overCurrentContext
+        filter.modalTransitionStyle = .crossDissolve
+        self.present(filter, animated: true, completion: nil)
     }
-    */
-
+    
 }
