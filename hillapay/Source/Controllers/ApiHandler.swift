@@ -19,7 +19,12 @@ class ApiHandler {
     
     func sendGetRequest(url: String, parameters: [String: Any], completion: @escaping(NSDictionary, Bool) -> Void) {
         
-        let headers = ["Authorization" : token]
+//        let headers = ["Authorization" : token]
+        let headers = [
+            "Content-Type" : "application/json",
+            "api-key"      : "5030"
+        ]
+        
         print("Send Get Request : \(url)")
         
         Alamofire.request(url, method: .get, parameters: parameters, headers: headers)
@@ -56,11 +61,15 @@ class ApiHandler {
     
     func sendPostRequest(url: String, parameters: [String: Any], completion: @escaping(NSDictionary, Bool) -> Void) {
         
-        let headers = ["Authorization" : token]
+        let headers = [
+            "Content-Type" : "application/json",
+            "api-key"      : "5030"
+        ]
+        
         print("Send Post Request : \(url)")
         print("parameters : \(parameters)")
         
-        Alamofire.request(url, method: .post, parameters: parameters, headers: headers)
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .responseJSON { response in
                 switch response.result {
                     
@@ -77,7 +86,11 @@ class ApiHandler {
     
     func sendPostJsonBodyRequest(url: String, parameters: [String: Any], completion: @escaping(NSDictionary, Bool) -> Void) {
         
-        let headers = ["Authorization" : token]
+        let headers = [
+            "Content-Type" : "application/json",
+            "api-key"      : "5030"
+        ]
+        
         print("Send Post Request : \(url)")
         print("parameters : \(parameters)")
         

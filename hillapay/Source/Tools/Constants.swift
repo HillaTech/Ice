@@ -53,10 +53,12 @@ struct Constants {
     
     struct API {
         
-        static let BASE             = "http://api.adventure.modarre.si"
+        static let BASE             = "http://api.hillapay.ir:8185/app/v1"
+        static let LONGMORE         = "&cid=D754d01f66aae2a4&uid=15252&source=3&debug=0"
         
-        static let Verifications    = BASE + "/verifications.json"
-        static let Token            = BASE + "/token"
+        static let device_Register  = BASE + "/log?action=client" + LONGMORE
+        static let user_signin      = BASE + "/user?action=sign" + LONGMORE
+        static let user_token       = BASE + "/user?action=token" + LONGMORE
         
         
         

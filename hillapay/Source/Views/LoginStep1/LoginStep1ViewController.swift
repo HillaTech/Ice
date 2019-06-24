@@ -18,6 +18,7 @@ class LoginStep1ViewController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
+        cellphoneTextField.text = "09354833303"
     }
     
     @IBAction func submitAction(_ sender: Any) {
@@ -38,7 +39,11 @@ class LoginStep1ViewController: UIViewController {
 extension LoginStep1ViewController: UserHandlerDelegate {
     
     func loginStep1Successfully() {
-        print("loginStep1Successfully")
+        
+        let Login = LoginStep2ViewController()
+        Login.cellPhone = cellphoneTextField.text
+        Login.modalTransitionStyle = .crossDissolve
+        self.present(Login, animated: true, completion: nil)
     }
     
     func loginStep1Failed() {

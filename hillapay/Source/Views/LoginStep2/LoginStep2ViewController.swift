@@ -13,11 +13,13 @@ class LoginStep2ViewController: UIViewController {
     @IBOutlet weak var verifyCodeTextField: UITextField!
     
     let userHandler = UserHandler.shared
+    var cellPhone : String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
+        verifyCodeTextField.text = "110"
     }
     
     @IBAction func SubmitAction(_ sender: Any) {
@@ -27,7 +29,7 @@ class LoginStep2ViewController: UIViewController {
         if verifyCode == "" {
             
         } else {
-            userHandler.loginStep2(code: verifyCode, delegate: self)
+            userHandler.loginStep2(cellphone: cellPhone, code: verifyCode, delegate: self)
         }
         
     }
@@ -40,7 +42,11 @@ class LoginStep2ViewController: UIViewController {
 extension LoginStep2ViewController: UserHandlerDelegate {
     
     func loginStep2Successfully() {
-        print("loginStep2Successfully")
+        
+        let Login = BaseTabBarController()
+        Login.modalTransitionStyle = .crossDissolve
+        self.present(Login, animated: true, completion: nil)
+        
     }
     
     func loginStep2Failed() {

@@ -157,11 +157,52 @@
                         <constraint firstItem="Lur-D6-GvW" firstAttribute="height" secondItem="NuP-kS-jc5" secondAttribute="height" id="wwB-JT-0uG"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIN-4E-JJZ">
+                    <rect key="frame" x="5" y="458" width="404" height="160"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay_using_qr_button" translatesAutoresizingMaskIntoConstraints="NO" id="3A2-XF-zXW" customClass="CImageView" customModule="hillapay" customModuleProvider="target">
+                            <rect key="frame" x="5" y="5" width="394" height="150"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="پرداخت" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELY-Bo-wGc">
+                            <rect key="frame" x="333.5" y="119" width="46.5" height="21"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_qr" translatesAutoresizingMaskIntoConstraints="NO" id="Caq-8Y-WOA">
+                            <rect key="frame" x="328" y="64" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="0Rv-i6-N6i"/>
+                                <constraint firstAttribute="width" constant="50" id="wKc-SL-vJa"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ELY-Bo-wGc" firstAttribute="top" secondItem="Caq-8Y-WOA" secondAttribute="bottom" constant="5" id="Pr5-7k-jlf"/>
+                        <constraint firstItem="3A2-XF-zXW" firstAttribute="leading" secondItem="ZIN-4E-JJZ" secondAttribute="leading" constant="5" id="Qzb-Kv-gAU"/>
+                        <constraint firstItem="Caq-8Y-WOA" firstAttribute="trailing" secondItem="ELY-Bo-wGc" secondAttribute="trailing" constant="-2" id="aGp-ya-CWO"/>
+                        <constraint firstAttribute="trailing" secondItem="3A2-XF-zXW" secondAttribute="trailing" constant="5" id="jc2-rc-bz0"/>
+                        <constraint firstAttribute="bottom" secondItem="ELY-Bo-wGc" secondAttribute="bottom" constant="20" id="sZg-AY-fLi"/>
+                        <constraint firstAttribute="height" constant="160" id="tgU-jt-9Li"/>
+                        <constraint firstAttribute="bottom" secondItem="3A2-XF-zXW" secondAttribute="bottom" constant="5" id="voV-BP-7rN"/>
+                        <constraint firstAttribute="trailing" secondItem="ELY-Bo-wGc" secondAttribute="trailing" constant="24" id="xxp-Zl-Aj8"/>
+                        <constraint firstItem="3A2-XF-zXW" firstAttribute="top" secondItem="ZIN-4E-JJZ" secondAttribute="top" constant="5" id="ylP-ms-0Ws"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="YlM-yq-KGV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="6U6-1Y-tBf"/>
+                <constraint firstItem="ZIN-4E-JJZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="S6l-pU-nhg"/>
                 <constraint firstItem="YlM-yq-KGV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="UTj-1r-jSJ"/>
+                <constraint firstItem="ZIN-4E-JJZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-5" id="XV6-Vb-hhp"/>
+                <constraint firstItem="ZIN-4E-JJZ" firstAttribute="top" secondItem="YlM-yq-KGV" secondAttribute="bottom" id="aZK-y8-sS1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YlM-yq-KGV" secondAttribute="trailing" constant="5" id="ahN-Rb-jiK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -10,6 +10,7 @@ import UIKit
 
 class IntroViewController: UIPageViewController {
     
+    let userHandler = UserHandler.shared
     var pageControl = UIPageControl()
     fileprivate var totalViewControllers = 4
     
@@ -40,7 +41,7 @@ class IntroViewController: UIPageViewController {
         
         configPageControl()
         configButton()
-        
+        userHandler.deviceRegister(delegate: self)
     }
     
     override func viewDidLayoutSubviews() {
@@ -166,5 +167,16 @@ extension IntroViewController: UIPageViewControllerDataSource, UIPageViewControl
         } else if (self.pageControl.currentPage == totalViewControllers - 1 && scrollView.contentOffset.x >= scrollView.bounds.size.width) {
             targetContentOffset.pointee = CGPoint(x: scrollView.bounds.size.width, y: 0);
         }
+    }
+}
+
+extension IntroViewController: UserHandlerDelegate {
+    
+    func deviceRegisterSuccessfully() {
+        print("deviceRegisterSuccessfully")
+    }
+    
+    func deviceRegisterFailed() {
+        print("deviceRegisterFailed")
     }
 }
