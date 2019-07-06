@@ -18,7 +18,6 @@ class LoginStep1ViewController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
-        cellphoneTextField.text = "09354833303"
     }
     
     @IBAction func submitAction(_ sender: Any) {
@@ -28,6 +27,7 @@ class LoginStep1ViewController: UIViewController {
         if cellphone == "" {
             
         } else {
+            userHandler.cellPhone = cellphone
             userHandler.loginStep1(cellphone: cellphone, delegate: self)
         }
         

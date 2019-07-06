@@ -160,7 +160,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIN-4E-JJZ">
                     <rect key="frame" x="5" y="458" width="404" height="160"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay_using_qr_button" translatesAutoresizingMaskIntoConstraints="NO" id="3A2-XF-zXW" customClass="CImageView" customModule="hillapay" customModuleProvider="target">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buy_charge_button" translatesAutoresizingMaskIntoConstraints="NO" id="3A2-XF-zXW" customClass="CImageView" customModule="hillapay" customModuleProvider="target">
                             <rect key="frame" x="5" y="5" width="394" height="150"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -168,8 +168,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="پرداخت" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELY-Bo-wGc">
-                            <rect key="frame" x="333.5" y="119" width="46.5" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اعتبار سنجی و رتبه بندی" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELY-Bo-wGc">
+                            <rect key="frame" x="222.5" y="119" width="157.5" height="21"/>
                             <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -181,13 +181,23 @@
                                 <constraint firstAttribute="width" constant="50" id="wKc-SL-vJa"/>
                             </constraints>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayt-Gz-Enp">
+                            <rect key="frame" x="0.0" y="0.0" width="404" height="160"/>
+                            <connections>
+                                <action selector="chackAccountAction:" destination="-1" eventType="touchUpInside" id="VSL-tp-M6g"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="ayt-Gz-Enp" firstAttribute="centerY" secondItem="ZIN-4E-JJZ" secondAttribute="centerY" id="1st-ac-N6d"/>
                         <constraint firstItem="ELY-Bo-wGc" firstAttribute="top" secondItem="Caq-8Y-WOA" secondAttribute="bottom" constant="5" id="Pr5-7k-jlf"/>
                         <constraint firstItem="3A2-XF-zXW" firstAttribute="leading" secondItem="ZIN-4E-JJZ" secondAttribute="leading" constant="5" id="Qzb-Kv-gAU"/>
                         <constraint firstItem="Caq-8Y-WOA" firstAttribute="trailing" secondItem="ELY-Bo-wGc" secondAttribute="trailing" constant="-2" id="aGp-ya-CWO"/>
+                        <constraint firstItem="ayt-Gz-Enp" firstAttribute="height" secondItem="ZIN-4E-JJZ" secondAttribute="height" id="gnF-qa-OL8"/>
+                        <constraint firstItem="ayt-Gz-Enp" firstAttribute="centerX" secondItem="ZIN-4E-JJZ" secondAttribute="centerX" id="iXF-73-HeI"/>
                         <constraint firstAttribute="trailing" secondItem="3A2-XF-zXW" secondAttribute="trailing" constant="5" id="jc2-rc-bz0"/>
+                        <constraint firstItem="ayt-Gz-Enp" firstAttribute="width" secondItem="ZIN-4E-JJZ" secondAttribute="width" id="lcI-aB-rD6"/>
                         <constraint firstAttribute="bottom" secondItem="ELY-Bo-wGc" secondAttribute="bottom" constant="20" id="sZg-AY-fLi"/>
                         <constraint firstAttribute="height" constant="160" id="tgU-jt-9Li"/>
                         <constraint firstAttribute="bottom" secondItem="3A2-XF-zXW" secondAttribute="bottom" constant="5" id="voV-BP-7rN"/>

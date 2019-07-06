@@ -33,10 +33,10 @@ class BaseTabBarController: UITabBarController {
         let item4Title = NSLocalizedString(Strings.home    , comment: "")
 
         
-        let item1 = UITabBarItem(title: item1Title, image: UIImage(named: "ic_tab1"), tag: 0)
-        let item2 = UITabBarItem(title: item2Title, image: UIImage(named: "ic_tab2"), tag: 1)
-        let item3 = UITabBarItem(title: item3Title, image: UIImage(named: "ic_tab3"), tag: 2)
-        let item4 = UITabBarItem(title: item4Title, image: UIImage(named: "ic_tab4"), tag: 3)
+        let item1 = UITabBarItem(title: item1Title, image: UIImage(named: "ic_tabbar4"), tag: 0)
+        let item2 = UITabBarItem(title: item2Title, image: UIImage(named: "ic_tabbar3"), tag: 1)
+        let item3 = UITabBarItem(title: item3Title, image: UIImage(named: "ic_tabbar2"), tag: 2)
+        let item4 = UITabBarItem(title: item4Title, image: UIImage(named: "ic_tabbar1"), tag: 3)
         
         firstTabNavigationController.tabBarItem   = item1
         secondTabNavigationControoller.tabBarItem = item2

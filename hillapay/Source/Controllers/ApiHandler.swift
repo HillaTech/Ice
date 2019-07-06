@@ -72,7 +72,6 @@ class ApiHandler {
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .responseJSON { response in
                 switch response.result {
-                    
                 case .success:
                     if let Json = response.result.value as? NSDictionary {
                         print(Json)

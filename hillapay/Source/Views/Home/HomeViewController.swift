@@ -16,4 +16,11 @@ class HomeViewController: UIViewController {
         self.navigationItem.title = Strings.home
     }
 
+    @IBAction func chackAccountAction(_ sender: Any) {
+        
+        let vc = CheckReportsViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
+

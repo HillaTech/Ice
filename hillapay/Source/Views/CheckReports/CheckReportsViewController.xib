@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansMobile(FaNum).ttf">
+            <string>IRANSansMobileFaNum</string>
+        </array>
+        <array key="IRANSansMobile(FaNum)_Bold.ttf">
+            <string>IRANSansMobileFaNum-Bold</string>
+        </array>
+        <array key="IRANSansMobile(FaNum)_Medium.ttf">
+            <string>IRANSansMobileFaNum-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckReportsViewController" customModule="hillapay" customModuleProvider="target">
+            <connections>
+                <outlet property="cellphoneTextField" destination="3Z3-ij-Z2p" id="bAi-IP-xtn"/>
+                <outlet property="codeMeliTextField" destination="qpU-7g-xu8" id="cdL-qC-2BK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uce-jW-Doc">
+                    <rect key="frame" x="0.0" y="124" width="414" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شماره تلفن همراه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8G-o5-7dT">
+                            <rect key="frame" x="162.5" y="15" width="89.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="gkw-ee-lfm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Medium" family="IRANSansMobile(FaNum)" pointSize="13"/>
+                            <color key="textColor" name="PRIMARY_4"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJe-Lr-59F" customClass="CView" customModule="hillapay" customModuleProvider="target">
+                            <rect key="frame" x="30" y="40" width="354" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="شماره تلفن همراه خود را وارد کنید" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Z3-ij-Z2p">
+                                    <rect key="frame" x="5" y="5" width="344" height="40"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="3Z3-ij-Z2p" firstAttribute="top" secondItem="fJe-Lr-59F" secondAttribute="top" constant="5" id="5zK-gQ-aVU"/>
+                                <constraint firstItem="3Z3-ij-Z2p" firstAttribute="leading" secondItem="fJe-Lr-59F" secondAttribute="leading" constant="5" id="AuK-Oa-hJN"/>
+                                <constraint firstAttribute="bottom" secondItem="3Z3-ij-Z2p" secondAttribute="bottom" constant="5" id="Fj4-46-kGe"/>
+                                <constraint firstAttribute="height" constant="50" id="o89-cP-wQu"/>
+                                <constraint firstAttribute="trailing" secondItem="3Z3-ij-Z2p" secondAttribute="trailing" constant="5" id="x5A-13-yw2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fJe-Lr-59F" secondAttribute="bottom" constant="10" id="0EH-4z-UvU"/>
+                        <constraint firstItem="i8G-o5-7dT" firstAttribute="centerX" secondItem="uce-jW-Doc" secondAttribute="centerX" id="9nI-18-DkX"/>
+                        <constraint firstItem="fJe-Lr-59F" firstAttribute="top" secondItem="i8G-o5-7dT" secondAttribute="bottom" constant="5" id="Kkg-4j-wZ7"/>
+                        <constraint firstItem="i8G-o5-7dT" firstAttribute="top" secondItem="uce-jW-Doc" secondAttribute="top" constant="15" id="NcD-De-mGa"/>
+                        <constraint firstAttribute="trailing" secondItem="fJe-Lr-59F" secondAttribute="trailing" constant="30" id="h2L-WZ-S1J"/>
+                        <constraint firstItem="fJe-Lr-59F" firstAttribute="leading" secondItem="uce-jW-Doc" secondAttribute="leading" constant="30" id="lHB-Bn-3JY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXc-Yc-MkQ">
+                    <rect key="frame" x="0.0" y="224" width="414" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="کد ملی" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrN-FR-CqX">
+                            <rect key="frame" x="188.5" y="15" width="37" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="s65-lF-VTb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Medium" family="IRANSansMobile(FaNum)" pointSize="13"/>
+                            <color key="textColor" name="PRIMARY_4"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KX3-zk-lwP" customClass="CView" customModule="hillapay" customModuleProvider="target">
+                            <rect key="frame" x="30" y="40" width="354" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="کد ملی خود را وارد کنید" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpU-7g-xu8">
+                                    <rect key="frame" x="5" y="5" width="344" height="40"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum" family="IRANSansMobile(FaNum)" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="qpU-7g-xu8" secondAttribute="bottom" constant="5" id="87p-go-iIw"/>
+                                <constraint firstAttribute="trailing" secondItem="qpU-7g-xu8" secondAttribute="trailing" constant="5" id="8Am-Du-BOz"/>
+                                <constraint firstItem="qpU-7g-xu8" firstAttribute="top" secondItem="KX3-zk-lwP" secondAttribute="top" constant="5" id="H2S-xZ-bBr"/>
+                                <constraint firstAttribute="height" constant="50" id="Hll-NA-MIQ"/>
+                                <constraint firstItem="qpU-7g-xu8" firstAttribute="leading" secondItem="KX3-zk-lwP" secondAttribute="leading" constant="5" id="ilM-0K-OIL"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KX3-zk-lwP" firstAttribute="leading" secondItem="dXc-Yc-MkQ" secondAttribute="leading" constant="30" id="7df-6y-Xav"/>
+                        <constraint firstAttribute="bottom" secondItem="KX3-zk-lwP" secondAttribute="bottom" constant="10" id="Bat-Oy-Cvm"/>
+                        <constraint firstItem="zrN-FR-CqX" firstAttribute="centerX" secondItem="dXc-Yc-MkQ" secondAttribute="centerX" id="ev4-0A-vdZ"/>
+                        <constraint firstItem="zrN-FR-CqX" firstAttribute="top" secondItem="dXc-Yc-MkQ" secondAttribute="top" constant="15" id="oza-9l-1LR"/>
+                        <constraint firstAttribute="trailing" secondItem="KX3-zk-lwP" secondAttribute="trailing" constant="30" id="xn1-wD-C3h"/>
+                        <constraint firstItem="KX3-zk-lwP" firstAttribute="top" secondItem="zrN-FR-CqX" secondAttribute="bottom" constant="5" id="zWh-Sc-qwC"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fa-do-zBC">
+                    <rect key="frame" x="0.0" y="792" width="414" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-qe-Q1R" customClass="CButton" customModule="hillapay" customModuleProvider="target">
+                            <rect key="frame" x="30" y="10" width="354" height="50"/>
+                            <color key="backgroundColor" red="0.2901960784" green="0.57254901960000004" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="adR-HD-Ur8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Bold" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                            <state key="normal" title="تایید">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="submiteAction:" destination="-1" eventType="touchUpInside" id="Mlb-zF-wlH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="PRIMARY_3"/>
+                    <constraints>
+                        <constraint firstItem="CWc-qe-Q1R" firstAttribute="leading" secondItem="1fa-do-zBC" secondAttribute="leading" constant="30" id="VId-NG-Vcx"/>
+                        <constraint firstItem="CWc-qe-Q1R" firstAttribute="top" secondItem="1fa-do-zBC" secondAttribute="top" constant="10" id="gcM-Tj-HOZ"/>
+                        <constraint firstAttribute="bottom" secondItem="CWc-qe-Q1R" secondAttribute="bottom" constant="10" id="ot4-Np-wlZ"/>
+                        <constraint firstAttribute="trailing" secondItem="CWc-qe-Q1R" secondAttribute="trailing" constant="30" id="sCL-wK-H6i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uce-jW-Doc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="0yu-hZ-5XH"/>
+                <constraint firstItem="1fa-do-zBC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="5iz-5r-ESb"/>
+                <constraint firstItem="dXc-Yc-MkQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="EN3-GP-39Q"/>
+                <constraint firstItem="dXc-Yc-MkQ" firstAttribute="top" secondItem="uce-jW-Doc" secondAttribute="bottom" id="EbL-0W-OwU"/>
+                <constraint firstItem="dXc-Yc-MkQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="VdE-1p-Orl"/>
+                <constraint firstItem="uce-jW-Doc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Ze7-7a-nR1"/>
+                <constraint firstItem="uce-jW-Doc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ah4-gg-3hV"/>
+                <constraint firstItem="1fa-do-zBC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="kvR-5k-6nR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1fa-do-zBC" secondAttribute="bottom" id="lJY-Um-iij"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="PRIMARY_3">
+            <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PRIMARY_4">
+            <color red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -60,7 +60,8 @@ struct Constants {
         static let user_signin      = BASE + "/user?action=sign" + LONGMORE
         static let user_token       = BASE + "/user?action=token" + LONGMORE
         
-        
+        static let scoring_report   = BASE + "/scoring/report?action=check" + LONGMORE
+        static let payment_report   = BASE + "/scoring/report?action=payment" + LONGMORE
         
     }
 }

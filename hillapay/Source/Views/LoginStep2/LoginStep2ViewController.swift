@@ -31,10 +31,7 @@ class LoginStep2ViewController: UIViewController {
         } else {
             userHandler.loginStep2(cellphone: cellPhone, code: verifyCode, delegate: self)
         }
-        
     }
-    
-
 }
 
 

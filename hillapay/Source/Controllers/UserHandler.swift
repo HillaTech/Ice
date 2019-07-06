@@ -11,16 +11,74 @@ import Foundation
 class UserHandler {
     
     public static let shared = UserHandler()
-    
     private init(){}
+    
+    let ud = UserDefaults.standard
+    
+    var cellPhone: String? {
+        get {
+            return ud.value(forKey: "UDCellPhone") as? String
+        }
+        set {
+            ud.set(newValue, forKey: "UDCellPhone")
+            ud.synchronize()
+        }
+    }
+    
+    var meliCode : String? {
+        
+        get {
+            return ud.value(forKey: "UDMeliCode") as? String
+        }
+        set {
+            ud.set(newValue, forKey: "UDMeliCode")
+            ud.synchronize()
+        }
+    }
+    
+    var nikeName : String? {
+        
+        get {
+            return ud.value(forKey: "UDNikeName") as? String
+        }
+        set {
+            ud.set(newValue, forKey: "UDNikeName")
+            ud.synchronize()
+        }
+    }
+    
+    var firstName : String? {
+        
+        get {
+            return ud.value(forKey: "UDFirstName") as? String
+        }
+        set {
+            ud.set(newValue, forKey: "UDFirstName")
+            ud.synchronize()
+        }
+    }
+    
+    var lastName : String? {
+        
+        get {
+            return ud.value(forKey: "UDLastName") as? String
+        }
+        set {
+            ud.set(newValue, forKey: "UDLastName")
+            ud.synchronize()
+        }
+    }
+    
     
     func deviceRegister(delegate: UserHandlerDelegate) {
         
         let parameters : [String: Any] = [
             "locale"            : "en-US",
-            "user_agent"        : "ios",
+            "user_agent"        : "iOS",
+            "system_name"       : "iOS",
             "application_ver"   : "1.0.0",
-            "application_name"  : "hillapay"
+            "application_name"  : "hillapay",
+            "timezone"          : "Asia/Tehran"
         ]
         
         ApiHandler.shared.sendPostRequest(url: Constants.API.device_Register, parameters: parameters, completion: {
