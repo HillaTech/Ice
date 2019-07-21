@@ -17,8 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = IntroViewController()
-        //let vc = BaseTabBarController()
+        
+        let vc : UIViewController!
+        
+        if UserHandler.shared.isLogin() {
+            vc = BaseTabBarController()
+        } else {
+            vc = IntroViewController()
+        }
         
         window!.rootViewController = vc
         window!.makeKeyAndVisible()

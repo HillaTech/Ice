@@ -27,10 +27,10 @@ class BaseTabBarController: UITabBarController {
 
         self.viewControllers = [firstTabNavigationController, secondTabNavigationControoller, thirdTabNavigationController, forceTabNavigationController]
         
-        let item1Title = NSLocalizedString(Strings.support , comment: "")
-        let item2Title = NSLocalizedString(Strings.profile , comment: "")
-        let item3Title = NSLocalizedString(Strings.reports , comment: "")
-        let item4Title = NSLocalizedString(Strings.home    , comment: "")
+        let item1Title = NSLocalizedString(Strings.support  , comment: "")
+        let item2Title = NSLocalizedString(Strings.profile  , comment: "")
+        let item3Title = NSLocalizedString(Strings.messages , comment: "")
+        let item4Title = NSLocalizedString(Strings.home     , comment: "")
 
         
         let item1 = UITabBarItem(title: item1Title, image: UIImage(named: "ic_tabbar4"), tag: 0)

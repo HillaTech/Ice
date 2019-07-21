@@ -53,7 +53,7 @@ struct Constants {
     
     struct API {
         
-        static let BASE             = "http://api.hillapay.ir:8185/app/v1"
+        static let BASE             = "https://api.hillapay.ir/app/v1"
         static let LONGMORE         = "&cid=D754d01f66aae2a4&uid=15252&source=3&debug=0"
         
         static let device_Register  = BASE + "/log?action=client" + LONGMORE
@@ -61,7 +61,10 @@ struct Constants {
         static let user_token       = BASE + "/user?action=token" + LONGMORE
         
         static let scoring_report   = BASE + "/scoring/report?action=check" + LONGMORE
-        static let payment_report   = BASE + "/scoring/report?action=payment" + LONGMORE
+        static let report_report   = BASE + "/scoring/report?action=payment" + LONGMORE
+        static let report_full     = BASE + "/scoring/report?action=full" + LONGMORE
+        static let report_list     = BASE + "/scoring/report?action=list" + LONGMORE
+        
         
     }
 }

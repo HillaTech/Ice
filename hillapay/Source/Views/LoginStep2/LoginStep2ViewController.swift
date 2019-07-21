@@ -19,7 +19,7 @@ class LoginStep2ViewController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
-        verifyCodeTextField.text = "110"
+        verifyCodeTextField.text = "1111"
     }
     
     @IBAction func SubmitAction(_ sender: Any) {

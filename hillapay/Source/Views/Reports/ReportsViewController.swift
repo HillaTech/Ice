@@ -13,7 +13,7 @@ class ReportsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = Strings.reports
+        self.navigationItem.title = Strings.messages
 
     }
     

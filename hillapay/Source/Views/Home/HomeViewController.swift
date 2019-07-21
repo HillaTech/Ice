@@ -18,8 +18,9 @@ class HomeViewController: UIViewController {
 
     @IBAction func chackAccountAction(_ sender: Any) {
         
-        let vc = CheckReportsViewController()
+        let vc = RankingListViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
 }

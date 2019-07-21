@@ -69,6 +69,25 @@ class UserHandler {
         }
     }
     
+    var uID : String? {
+        
+        get {
+            return ud.value(forKey: "userUID") as? String
+        }
+        set {
+            ud.set(newValue, forKey: "userUID")
+            ud.synchronize()
+        }
+    }
+
+    func isLogin() -> Bool {
+        
+        if uID != nil {
+            return true
+        } else {
+            return false
+        }
+    }
     
     func deviceRegister(delegate: UserHandlerDelegate) {
         
@@ -115,7 +134,16 @@ class UserHandler {
             (response: NSDictionary, status: Bool) in
             
             if status {
-                response[""]
+                
+                print(response)
+                if let resultUser = response["result_user_token"] as? [String: Any] {
+                    if let uid = resultUser["uid"] as? String {
+                        
+                        self.uID = uid
+                    }
+                }
+                
+                print(response)
                 delegate.loginStep2Successfully()
             } else {
                 delegate.loginStep2Failed()

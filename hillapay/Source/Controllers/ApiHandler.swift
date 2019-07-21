@@ -75,7 +75,15 @@ class ApiHandler {
                 case .success:
                     if let Json = response.result.value as? NSDictionary {
                         print(Json)
-                        completion(Json, true)
+                        if let status = Json["status"] as? [String: Any] {
+                            if let statusCode = status["status"] as? Int {
+                                if statusCode == 200 {
+                                    completion(Json, true)
+                                } else {
+                                    completion([:], false)
+                                }
+                            }
+                        }
                     }
                 case .failure( _):
                     completion([:], false)
@@ -100,8 +108,17 @@ class ApiHandler {
                 case .success:
                     if let Json = response.result.value as? NSDictionary {
                         print(Json)
-                        completion(Json, true)
+                        if let status = Json["status"] as? [String: Any] {
+                            if let statusCode = status["status"] as? Int {
+                                if statusCode == 200 {
+                                    completion(Json, true)
+                                } else {
+                                    completion([:], false)
+                                }
+                            }
+                        }
                     }
+                    
                 case .failure( _):
                     completion([:], false)
                 }

@@ -53,8 +53,11 @@ class CheckReportsViewController: UIViewController {
         
         let cellPhone = cellphoneTextField.text ?? ""
         let codeMeli  = codeMeliTextField.text ?? ""
-        
+
         accountHandler.checkReports(cellPhone: cellPhone, codeMeli: codeMeli, delegate: self)
+        
+//        let vc = GetCheckReportsViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

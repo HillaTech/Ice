@@ -1,14 +1,14 @@
 //
-//  GetCheckReportsViewController.swift
+//  RankingFailedViewController.swift
 //  hillapay
 //
-//  Created by Mahdi on 7/14/19.
+//  Created by Mahdi on 7/21/19.
 //  Copyright © 2019 Mahdi. All rights reserved.
 //
 
 import UIKit
 
-class GetCheckReportsViewController: UIViewController {
+class RankingFailedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

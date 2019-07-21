@@ -14,7 +14,6 @@ class AccountHandler {
     
     private init(){}
     
-    
     func checkReports(cellPhone: String, codeMeli: String,delegate: AccountHandlerDelegate) {
         
         let parameters : [String: Any] = [
@@ -52,7 +51,32 @@ class AccountHandler {
             "token"      : token
         ]
         
-        ApiHandler.shared.sendPostRequest(url: Constants.API.payment_report, parameters: parameters, completion: {
+        ApiHandler.shared.sendPostRequest(url: Constants.API.report_report, parameters: parameters, completion: {
+            (response: NSDictionary, status: Bool) in
+            
+            print(response)
+            if status {
+                
+                if let result = response["result_report_get"] as? NSDictionary {
+                    
+                    guard let url = result["transaction_url"] as? String else {
+                        return
+                    }
+                    
+                    delegate.peymentReportsSuccessfully(webUrl: url)
+                }
+            } else {
+                delegate.peymentReportsFailed()
+            }
+        })
+    }
+    func peymentGet(orderId: String,delegate: AccountHandlerDelegate) {
+        
+        let parameters : [String: Any] = [
+            "order_id" : "912887464144"
+        ]
+        
+        ApiHandler.shared.sendPostRequest(url: Constants.API.report_full, parameters: parameters, completion: {
             (response: NSDictionary, status: Bool) in
             
             print(response)
@@ -72,6 +96,39 @@ class AccountHandler {
         })
     }
     
+    func getRankingList(delegate: AccountHandlerDelegate) {
+        
+        let parameters : [String: Any] = [
+            "order_id" : "912887464144"
+        ]
+        
+        ApiHandler.shared.sendPostRequest(url: Constants.API.report_list, parameters: parameters, completion: {
+            (response: NSDictionary, status: Bool) in
+            
+            print(response)
+            if status {
+                
+                if let result = response["result_report_list"] as? NSDictionary {
+                    
+                    if let listData = result["data"] as? [[String: Any]] {
+                        var ranks = [Rank]()
+                        for data in listData {
+                            ranks.append(Rank(JSON: data)!)
+                        }
+                        delegate.getRankingListSuccessfully(ranks: ranks)
+                    } else {
+                        delegate.getRankingListFailed()
+                    }
+                } else {
+                    delegate.getRankingListFailed()
+                }
+            } else {
+                delegate.getRankingListFailed()
+            }
+        })
+        
+    }
+    
 }
 
 //MARK: - DELEGATE ACCOUNT HANDLER
@@ -82,6 +139,9 @@ protocol AccountHandlerDelegate {
     
     func peymentReportsSuccessfully(webUrl: String)
     func peymentReportsFailed()
+    
+    func getRankingListSuccessfully(ranks: [Rank])
+    func getRankingListFailed()
 }
 
 extension AccountHandlerDelegate {
@@ -91,4 +151,7 @@ extension AccountHandlerDelegate {
     
     func peymentReportsSuccessfully(webUrl: String){}
     func peymentReportsFailed(){}
+    
+    func getRankingListSuccessfully(ranks: [Rank]){}
+    func getRankingListFailed(){}
 }

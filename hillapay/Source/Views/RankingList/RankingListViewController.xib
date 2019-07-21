@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSansMobile(FaNum)_Medium.ttf">
+            <string>IRANSansMobileFaNum-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankingListViewController" customModule="hillapay" customModuleProvider="target">
+            <connections>
+                <outlet property="activityview" destination="1La-OD-Oca" id="2J8-wA-3oV"/>
+                <outlet property="noDataImageView" destination="Msm-WW-S1k" id="b0g-6b-0sf"/>
+                <outlet property="noDataView" destination="xAI-cy-fMb" id="9vb-Fa-tmz"/>
+                <outlet property="tableview" destination="D5G-9a-yiM" id="yh6-bN-44O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="در حال دریافت اطلاعات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep7-pQ-eEV">
+                    <rect key="frame" x="141" y="415" width="132" height="18"/>
+                    <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Medium" family="IRANSansMobile(FaNum)" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1La-OD-Oca">
+                    <rect key="frame" x="197" y="443" width="20" height="20"/>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAI-cy-fMb">
+                    <rect key="frame" x="0.0" y="342.5" width="414" height="221"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_reports" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-WW-S1k">
+                            <rect key="frame" x="103.5" y="0.0" width="207" height="110.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Msm-WW-S1k" secondAttribute="height" multiplier="15:8" id="U6Z-cq-jYp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="گزارشی موجود نیست" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoB-L0-3bs">
+                            <rect key="frame" x="134.5" y="120.5" width="145" height="21.5"/>
+                            <fontDescription key="fontDescription" name="IRANSansMobileFaNum-Medium" family="IRANSansMobile(FaNum)" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Msm-WW-S1k" firstAttribute="width" secondItem="xAI-cy-fMb" secondAttribute="width" multiplier="1:2" id="1Nv-5S-XC2"/>
+                        <constraint firstItem="OoB-L0-3bs" firstAttribute="centerX" secondItem="xAI-cy-fMb" secondAttribute="centerX" id="6gy-cI-sA5"/>
+                        <constraint firstItem="Msm-WW-S1k" firstAttribute="centerX" secondItem="xAI-cy-fMb" secondAttribute="centerX" id="AmI-zz-B8F"/>
+                        <constraint firstAttribute="width" secondItem="xAI-cy-fMb" secondAttribute="height" multiplier="15:8" id="QLl-PW-UHd"/>
+                        <constraint firstItem="Msm-WW-S1k" firstAttribute="top" secondItem="xAI-cy-fMb" secondAttribute="top" id="TEz-Qb-FK7"/>
+                        <constraint firstItem="OoB-L0-3bs" firstAttribute="top" secondItem="Msm-WW-S1k" secondAttribute="bottom" constant="10" id="fuG-Zn-FUW"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D5G-9a-yiM">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9v-Dg-xVi" customClass="CView" customModule="hillapay" customModuleProvider="target">
+                    <rect key="frame" x="20" y="792" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_plus" translatesAutoresizingMaskIntoConstraints="NO" id="IKp-du-JBy">
+                            <rect key="frame" x="16.5" y="16.5" width="17" height="17"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-RV-ia9">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <connections>
+                                <action selector="plusRanking:" destination="-1" eventType="touchUpInside" id="G37-y8-dzo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83356946243523322" green="0.17919766180389493" blue="0.098621186526010651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IKp-du-JBy" firstAttribute="centerX" secondItem="F9v-Dg-xVi" secondAttribute="centerX" id="BZ4-Im-SMT"/>
+                        <constraint firstItem="JQ0-RV-ia9" firstAttribute="centerX" secondItem="F9v-Dg-xVi" secondAttribute="centerX" id="Ps8-G2-dWE"/>
+                        <constraint firstItem="JQ0-RV-ia9" firstAttribute="centerY" secondItem="F9v-Dg-xVi" secondAttribute="centerY" id="V8y-iT-xBx"/>
+                        <constraint firstItem="IKp-du-JBy" firstAttribute="centerY" secondItem="F9v-Dg-xVi" secondAttribute="centerY" id="VH8-hw-zfp"/>
+                        <constraint firstAttribute="width" secondItem="F9v-Dg-xVi" secondAttribute="height" multiplier="1:1" id="VUL-g3-H8a"/>
+                        <constraint firstAttribute="width" constant="50" id="cnu-xU-rHw"/>
+                        <constraint firstItem="IKp-du-JBy" firstAttribute="height" secondItem="F9v-Dg-xVi" secondAttribute="height" multiplier="1:3" id="gm3-58-dey"/>
+                        <constraint firstItem="JQ0-RV-ia9" firstAttribute="height" secondItem="F9v-Dg-xVi" secondAttribute="height" id="idf-qr-Xjl"/>
+                        <constraint firstItem="JQ0-RV-ia9" firstAttribute="width" secondItem="F9v-Dg-xVi" secondAttribute="width" id="kGm-YM-IIJ"/>
+                        <constraint firstItem="IKp-du-JBy" firstAttribute="width" secondItem="F9v-Dg-xVi" secondAttribute="width" multiplier="1:3" id="pZF-o4-Usb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1La-OD-Oca" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="0Sn-nW-uLh"/>
+                <constraint firstItem="xAI-cy-fMb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0q6-0z-Jug"/>
+                <constraint firstItem="F9v-Dg-xVi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BoI-ji-fE1"/>
+                <constraint firstItem="D5G-9a-yiM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eo8-5U-V48"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D5G-9a-yiM" secondAttribute="bottom" id="MTA-M7-4I5"/>
+                <constraint firstItem="1La-OD-Oca" firstAttribute="top" secondItem="ep7-pQ-eEV" secondAttribute="bottom" constant="10" id="O9q-qK-DlU"/>
+                <constraint firstItem="xAI-cy-fMb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Om6-e8-GaM"/>
+                <constraint firstItem="1La-OD-Oca" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="PLo-GK-laK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="F9v-Dg-xVi" secondAttribute="bottom" constant="20" id="bfD-53-LNt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D5G-9a-yiM" secondAttribute="trailing" id="cri-NX-t6E"/>
+                <constraint firstItem="D5G-9a-yiM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dGA-e9-N97"/>
+                <constraint firstItem="xAI-cy-fMb" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="h8i-GM-xFx"/>
+                <constraint firstItem="ep7-pQ-eEV" firstAttribute="centerX" secondItem="1La-OD-Oca" secondAttribute="centerX" id="rcq-nb-hBk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_plus" width="52" height="52"/>
+        <image name="ic_reports" width="512" height="512"/>
+    </resources>
+</document>
